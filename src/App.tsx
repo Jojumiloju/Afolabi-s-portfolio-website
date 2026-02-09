@@ -1,14 +1,13 @@
 import project_1 from './assets/project 1.jpg'
 import project_2 from './assets/project 2.jpg'
 import contact from './assets/contact.jpg'
-import medium from './assets/medium.png'
-import twitter from './assets/twitter.png'
-import behance from './assets/behance.png'
 import profile_pic from './assets/profile pic.jpg'
-import icon_1 from './assets/icon 1.jpg'
+import icon_1 from './assets/icon 1.png'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import './App.css'
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
+import { SiCredly } from 'react-icons/si'
 
 function App() {
 
@@ -21,15 +20,18 @@ function App() {
         sm:font-semibold sm:text-2xl'>Afolabi Akanni</span>
         <div className='space-x-2 text-brand-secondary
         sm:text-xl sm:flex sm:gap-17'>
-          <span><a href="#Home">Home</a></span>
+          <span><a href="#Profile">Profile</a></span>
           <span><a href="#Projects">Projects</a></span>
           <span><a href="#Contacts">Contacts</a></span>
         </div>
         <span className='hidden
         lg:flex sm:gap-2 sm: h-1/2 sm:my-auto'>
-          <img src={medium} alt="" />
-          <img src={twitter} alt="" />
-          <img src={behance} alt="" />
+          <a href="https://www.linkedin.com/in/afolabi-akanni/" target="_blank" ><FaLinkedin className='text-2xl text-brand-secondary'/></a>
+          <a href="https://github.com/AkanniA1" target="_blank"><FaGithub className='text-2xl text-brand-secondary'/></a>
+          <a href="https://www.credly.com/users/akanni-afolabi/edit#" target="_blank"><SiCredly className='text-2xl text-brand-secondary'/></a>
+          
+          
+          
         </span>
       </nav>
       {/* introductory section */}
@@ -57,7 +59,7 @@ function App() {
       </div>
       {/* Profile section */}
       <div className='font-display px-10 py-9 bg-brand-primary
-      sm:px-30'>
+      sm:px-30' id='Profile'>
         <div className='text-3xl font-bold text-brand-tertiary py-2
         sm:text-8xl/35'>Profile</div>
         <div className='text-brand-secondary
@@ -77,7 +79,7 @@ function App() {
                 </div>
             </li>
             <li className='sm:mt-20'>
-              <div className='text-brand-secondary text-sm font-semibold sm:text-2xl/relaxed'>2023-2036</div>
+              <div className='text-brand-secondary text-sm font-semibold sm:text-2xl/relaxed'>2023-2025</div>
               <div className='text-sm text-brand-secondary sm:text-2xl/relaxed'>
                 Part of the google developers group. AI/ML Track
                 Participated in team coaching sessions and ML study groups; contributed to peer learning.
@@ -86,7 +88,7 @@ function App() {
             <li className='sm:mt-20'>
               <div className='text-brand-secondary text-sm font-semibold sm:text-2xl/relaxed'>2026-present</div>
               <div className='text-sm text-brand-secondary sm:text-2xl/relaxed'>
-                yh
+                Data Analytics Instructor at ENIKI Computer School
               </div>
             </li>
           </ul>
@@ -104,20 +106,21 @@ function App() {
         <div className='md:flex md:gap-30 md:flex-wrap'>
           <div className='md:flex-1'>
             <img className='max-w-full h-auto md:min-w-100' src={project_2} alt="" />
-            <div className='italic text-xs sm:text-sm sm:mb-1'>November 24, 2019</div><br />
+            <div className='italic text-xs sm:text-sm sm:mb-1'>November 24, 2022</div><br />
             <span className='text-sm sm:text-lg/8'>
-              Some Projecrs which I have worked are on this website. 
-              https://github.com/AkanniA1
+              Some Projecrs which I have worked are on this website:     
+
+              <a href="https://github.com/AkanniA1" target='_blank'> https://github.com/AkanniA1</a>
             </span>
           </div>
           <div className='md:flex-1'>
             <img className='max-w-full h-auto md:min-w-100' src={project_1} alt="" />
-            <div className='italic text-xs sm:text-sm'>November 24, 2019</div><br />
+            <div className='italic text-xs sm:text-sm'>January 09, 2026</div><br />
             <span className='text-sm sm:text-lg/8'>
               <p className='font-semibold sm:text-2xl/10 sm:font-bold'>Some Case Study</p>
               Some certificates which I
-                 have obtained during my journey and transition in tech are  on this website : 
-              https://www.credly.com/users/akanni-afolabi/edit#
+                 have obtained during my journey and transition in tech are  on this website: 
+              <a href="https://www.credly.com/users/akanni-afolabi/edit#" target='_blank'> https://www.credly.com/users/akanni-afolabi/edit#</a>
             </span>
           </div>
         </div>
