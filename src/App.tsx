@@ -105,7 +105,12 @@ function App() {
         </div>
         <div className='md:flex md:gap-30 md:flex-wrap'>
           <div className='md:flex-1'>
+            <div className='relative group cursor-pointer'>
             <img className='max-w-full h-auto md:min-w-100' src={project_2} alt="" />
+            <div className='absolute inset-0 bg-brand-brown flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
+              <p className='text-brand-primary text-3xl font-bold'>My projects</p>
+            </div>
+            </div>
             <div className='italic text-xs sm:text-sm sm:mb-1'>November 24, 2022</div><br />
             <span className='text-sm sm:text-lg/8'>
               Some Projecrs which I have worked are on this website:     
@@ -114,10 +119,15 @@ function App() {
             </span>
           </div>
           <div className='md:flex-1'>
+            <div className='relative group cursor-pointer'>
             <img className='max-w-full h-auto md:min-w-100' src={project_1} alt="" />
+            <div className='absolute inset-0 bg-brand-brown flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300'>
+              <p className='text-brand-primary text-3xl font-bold'>My certificates</p>
+            </div>
+            </div>
             <div className='italic text-xs sm:text-sm'>January 09, 2026</div><br />
             <span className='text-sm sm:text-lg/8'>
-              <p className='font-semibold sm:text-2xl/10 sm:font-bold'>Some Case Study</p>
+              <p className='font-semibold sm:text-2xl/10 sm:font-bold'>Credentials</p>
               Some certificates which I
                  have obtained during my journey and transition in tech are  on this website: 
               <a href="https://www.credly.com/users/akanni-afolabi/edit#" target='_blank'> https://www.credly.com/users/akanni-afolabi/edit#</a>
@@ -136,7 +146,7 @@ function App() {
           <div className='text-sm sm:text-2xl/10 sm:mb-0 sm:mt-auto'>
             <p>Please Reach out to me via these mediums: </p>
             <p>E-mail: akanniaone@gmail.com</p>
-            <p>Linked-In Profile: https://www.linkedin.com/in/afolabi-akanni/</p>
+            <p>Linked-In Profile: <a href="https://www.linkedin.com/in/afolabi-akanni/">https://www.linkedin.com/in/afolabi-akanni/</a> </p>
             <p>Phone number : 08143992926</p>
           </div>
         </div>
